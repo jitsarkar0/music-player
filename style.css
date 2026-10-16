@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main music card */
+.music-card {
+    height: 500px;
+    width: 360px;
+    background-color: #e6ebee;
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Artist information */
+.music-card p {
+    margin-bottom: 4px;
+}
+
+.artist-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Song and playback information */
+.music-card-info {
+    width: 100%;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+/* Song title and heading icons */
+.song-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.song-title {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.song-heading img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+/* Progress bar background */
+.progress-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #151417;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Played portion of the song */
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #19ed32;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Progress bar knob */
+.progress-knob {
+    width: 16px;
+    height: 16px;
+    background-color: #19ed32;
+    border-radius: 50%;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Current time and song duration */
+
+.time-stamps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    color: #000;
+    margin-top: 8px;
+}
+
+/* Playback control layout */
+.player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+/* Playback control icon sizes */
+.player-controls img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+#play-pause-btn {
+    cursor: pointer;
+}
